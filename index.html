@@ -1,60 +1,89 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>لوله يجدع</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&display=swap" rel="stylesheet">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700;800&display=swap');
 *{margin:0;padding:0;box-sizing:border-box}
 body{
 min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;
 font-family:'Cairo',sans-serif;
-background:#e9d5ff;
-background-image: 
-radial-gradient(ellipse at 20% 30%, rgba(251,207,232,0.95) 0%, transparent 55%),
-radial-gradient(ellipse at 80% 20%, rgba(216,180,254,0.9) 0%, transparent 55%),
-url('https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=1200');
-background-size:cover;background-position:center;background-blend-mode:overlay;
+background: linear-gradient(180deg,#fbcfe8 0%,#e9d5ff 50%,#d8b4fe 100%);
 }
-.wrap{width:100%;max-width:430px}
+.wrap{width:100%;max-width:400px}
 h1{
-font-size:62px;font-weight:800;color:#b07acb;text-align:center;line-height:1;
--webkit-text-stroke:3px white;
-text-shadow:0 0 20px rgba(255,255,255,0.9),0 0 40px rgba(176,122,203,0.4);
-margin-bottom:28px;
+font-size:60px;font-weight:800;color:#b07acb;text-align:center;
+-webkit-text-stroke:3px #fff;
+text-shadow:0 0 20px rgba(255,255,255,0.9);
+margin-bottom:25px;
 }
-.bubbles{display:flex;justify-content:center;gap:14px;margin-bottom:32px}
-.bubble{width:62px;height:62px;border-radius:50%;background:rgba(255,255,255,0.55);backdrop-filter:blur(10px);border:1.5px solid rgba(255,255,255,0.9);display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 5px 20px rgba(0,0,0,0.08), inset 0 2px 0 rgba(255,255,255,0.9)}
-.links{display:flex;flex-direction:column;gap:18px}
+.bubbles{display:flex;justify-content:center;gap:12px;margin-bottom:30px}
+.bubble{
+width:60px;height:60px;border-radius:50%;
+background:rgba(255,255,255,0.6);
+border:1.5px solid #fff;
+display:flex;align-items:center;justify-content:center;
+font-size:26px;
+}
+.links{display:flex;flex-direction:column;gap:16px}
 .card{
-display:flex;align-items:center;gap:16px;padding:16px 22px;
-background:linear-gradient(180deg, rgba(255,255,255,0.6), rgba(255,255,255,0.42));
-backdrop-filter:blur(20px);border-radius:22px;border:1.8px solid rgba(255,255,255,0.9);
-box-shadow:0 10px 30px rgba(176,122,203,0.18), inset 0 1px 0 white;
-text-decoration:none;color:#111;position:relative;transition:0.3s;
+display:flex;align-items:center;gap:14px;
+padding:15px 20px;
+background:rgba(255,255,255,0.6);
+backdrop-filter:blur(15px);
+border-radius:22px;
+border:1.5px solid #fff;
+text-decoration:none;
+color:#111;
+box-shadow:0 8px 25px rgba(176,122,203,0.15);
 }
-.card::after{content:'✦';position:absolute;right:18px;top:14px;font-size:12px;color:white}
-.card-icon{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;background:rgba(255,255,255,0.6);flex-shrink:0}
-.card b{font-size:20px;display:block}
-.card span{font-size:14px;color:#333;font-weight:600}
+.card-icon{
+width:44px;height:44px;
+border-radius:12px;
+background:#fff;
+display:flex;align-items:center;justify-content:center;
+flex-shrink:0;
+}
+.card-icon img{width:26px;height:26px;object-fit:contain}
+.card b{font-size:18px;display:block}
+.card span{font-size:13px;color:#555}
 </style>
 </head>
 <body>
 <div class="wrap">
 <h1>لوله يجدع</h1>
-<div class="bubbles"><div class="bubble">🦋</div><div class="bubble">🌸</div><div class="bubble">✨</div></div>
+
+<div class="bubbles">
+<div class="bubble">🦋</div>
+<div class="bubble">🌸</div>
+<div class="bubble">✨</div>
+</div>
 
 <div class="links">
+
 <a class="card" href="https://www.instagram.com/lwlwyjd" target="_blank">
-<div class="card-icon">📸</div><div><b>Instagram</b><span>@lwlwyjd</span></div>
+<div class="card-icon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+</div>
+<div><b>Instagram</b><span>@lwlwyjd</span></div>
 </a>
+
 <a class="card" href="https://www.tiktok.com/@.a32424" target="_blank">
-<div class="card-icon">🎵</div><div><b>TikTok</b><span>@.a32424</span></div>
+<div class="card-icon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Ionicons_logo-tiktok.svg" alt="TikTok">
+</div>
+<div><b>TikTok</b><span>@.a32424</span></div>
 </a>
+
 <a class="card" href="https://wa.me/201210435638" target="_blank">
-<div class="card-icon">💚</div><div><b>WhatsApp</b><span>01210435638</span></div>
+<div class="card-icon">
+<img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+</div>
+<div><b>WhatsApp</b><span>01210435638</span></div>
 </a>
+
 </div>
 </div>
 </body>
