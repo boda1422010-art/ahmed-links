@@ -1,65 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="ar">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Abdulrahman Ehab - CEO Golden Hour</title>
+<title>لوله يجدع</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&family=Cairo:wght@600&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box}
 body{
 min-height:100vh;display:flex;justify-content:center;align-items:center;padding:20px;
-background:linear-gradient(180deg,#b8e6f0 0%, #d4f0f5 10%, #ffeec6 40%, #ffd88a 75%, #e6c07a 100%);
-font-family:Inter,system-ui;
+background: radial-gradient(circle at 30% 20%, #fbcfe8 0%, #e9d5ff 25%, #d8b4fe 40%, #f0abfc 65%, #c4b5fd 100%),
+url('https://images.unsplash.com/photo-1534088568595-a066f410bcda?q=80&w=1000') center/cover;
+background-blend-mode: overlay;
+font-family: 'Cairo', system-ui;
 }
-.card{
-width:100%;max-width:420px;
-background:#ffffffEE;
-border-radius:32px;
-padding:42px 28px 28px;
-text-align:center;
-border:2px solid #ffffff;
-box-shadow:0 25px 70px rgba(90,60,20,0.22),0 0 0 1px rgba(255,255,255,0.8) inset;
-transform:perspective(1000px) rotateY(-2deg);
+body::before{content:'';position:fixed;inset:0;background:linear-gradient(180deg,rgba(255,255,255,0.1),rgba(196,181,253,0.3));pointer-events:none}
+.card{position:relative;width:100%;max-width:420px;text-align:center;z-index:1}
+h1{
+font-family:'Fredoka','Cairo',sans-serif;font-size:58px;color:#a87ac2;
+text-shadow:0 0 0 #fff, 0 2px 0 #fff, 0 0 15px rgba(255,255,255,0.9), 0 0 25px rgba(168,122,194,0.5);
+-webkit-text-stroke: 2px #fff;
+line-height:1.1;margin-bottom:10px;
 }
-.avatar-wrap{width:132px;height:132px;margin:0 auto 22px;}
-.avatar-ring{
-width:100%;height:100%;border-radius:26px;padding:3px;
-background:linear-gradient(135deg,#ffd67e,#ffb84d,#ffd67e);
-box-shadow:0 0 20px rgba(255,184,77,0.6);
-}
-.avatar{width:100%;height:100%;border-radius:23px;overflow:hidden;background:#fff}
-.avatar img{width:100%;height:100%;object-fit:cover;object-position:center top;display:block}
-h1{font-family:Georgia,serif;font-size:32px;color:#1a1a1a}
-.ceo{color:#c9a04a;font-size:17px;margin:6px 0 10px}
-.bio{color:#666;font-size:14px;margin-bottom:26px}
-.links{display:flex;flex-direction:column;gap:12px}
+.subtitle{color:#8b5fb3;font-size:15px;margin-bottom:22px;letter-spacing:0.5px;text-shadow:0 1px 0 #fff}
+.icons{display:flex;gap:12px;justify-content:center;margin-bottom:28px}
+.icon{width:56px;height:56px;border-radius:50%;background:rgba(255,255,255,0.5);backdrop-filter:blur(12px);border:1.5px solid rgba(255,255,255,0.8);display:flex;align-items:center;justify-content:center;font-size:24px;box-shadow:0 4px 15px rgba(168,122,194,0.2)}
+.links{display:flex;flex-direction:column;gap:16px}
 .link{
-display:flex;justify-content:space-between;align-items:center;
-padding:17px 20px;
-background:#fff;
-border-radius:18px;
-color:#1a1a1a;text-decoration:none;font-weight:700;
-border:1px solid #eee;
-box-shadow:0 4px 15px rgba(0,0,0,0.05);
-transition:all 0.25s ease;
+display:flex;align-items:center;gap:16px;padding:16px 20px;
+background:rgba(255,255,255,0.42);backdrop-filter:blur(18px);
+border-radius:20px;border:1.5px solid rgba(255,255,255,0.7);
+text-decoration:none;color:#1f1f1f;text-align:left;
+box-shadow:0 8px 32px rgba(168,122,194,0.15), inset 0 1px 0 rgba(255,255,255,0.9);
+transition:all 0.3s ease;
 }
-.link:active{transform:scale(1.08);border-color:#ffd67e;box-shadow:0 0 0 2px #ffd67e,0 0 25px #ffd67eAA}
-.footer{margin-top:22px;font-size:10px;color:#a08a5a;letter-spacing:2px}
+.link:hover{transform:translateY(-3px) scale(1.02);background:rgba(255,255,255,0.6);box-shadow:0 12px 40px rgba(168,122,194,0.25)}
+.link-icon{width:48px;height:48px;border-radius:12px;background:rgba(255,255,255,0.6);display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0}
+.link-text{line-height:1.2}
+.link-text b{font-size:20px;display:block;color:#111}
+.link-text span{font-size:15px;color:#444;font-weight:600}
+.footer{margin-top:26px;background:rgba(255,255,255,0.45);backdrop-filter:blur(12px);padding:10px 18px;border-radius:50px;display:inline-block;border:1px solid rgba(255,255,255,0.7);font-size:13px;color:#7a5a8a}
 </style>
 </head>
 <body>
 <div class="card">
-<div class="avatar-wrap"><div class="avatar-ring"><div class="avatar"><img src="IMG-20261028-WA0030.jpg" alt="Abdulrahman"></div></div></div>
-<h1>Abdulrahman Ehab</h1>
-<div class="ceo">CEO & Founder</div>
-<div class="bio">CEO & Entrepreneur • Young Business Leader</div>
-<div class="links">
-<a class="link" href="https://www.tiktok.com/@Abdulrahman_Ehab37">🎵 TikTok <span>↗</span></a>
-<a class="link" href="https://www.instagram.com/Abdulrahman_Ehab37">📸 Instagram <span>↗</span></a>
-<a class="link" href="https://www.facebook.com/Abdulrahman.Ehab.37">📘 Facebook <span>↗</span></a>
-<a class="link" href="https://wa.me/201210746111">💬 WhatsApp <span>↗</span></a>
+<h1>لوله يجدع</h1>
+<div class="subtitle">✨ Content Creator • Lifestyle • Pink Dreams ✨</div>
+<div class="icons">
+<div class="icon">🦋</div><div class="icon">🌸</div><div class="icon">✨</div>
 </div>
-<div class="footer">GOLDEN HOUR • WHITE GLASS • CEO 2026</div>
+<div class="links">
+<a class="link" href="https://www.instagram.com/lwlwyjd" target="_blank">
+<div class="link-icon">📸</div><div class="link-text"><b>Instagram</b><span>@lwlwyjd</span></div>
+</a>
+<a class="link" href="https://www.tiktok.com/@.a32424" target="_blank">
+<div class="link-icon">🎵</div><div class="link-text"><b>TikTok</b><span>@.a32424</span></div>
+</a>
+<a class="link" href="https://wa.me/201210435638" target="_blank">
+<div class="link-icon">💬</div><div class="link-text"><b>WhatsApp</b><span>01210435638</span></div>
+</a>
+<a class="link" href="https://www.instagram.com/lwlwyjd" target="_blank">
+<div class="link-icon">🛍️</div><div class="link-text"><b>Shop My Favorites</b><span>لوله يجدع 😉</span></div>
+</a>
+</div>
+<div class="footer">✨ Just a girl living in pastel clouds ✨</div>
 </div>
 </body>
 </html>
